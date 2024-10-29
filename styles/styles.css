@@ -2,48 +2,123 @@ body{
     margin: 0;
     width: 100%;
     height: 100%;
+    background-color: #40534C;
 }
 
-header{
-    position: sticky;
-    top: 0;
-    margin-top: 5%;
-    text-align: center;
-    font-size: 2em;  
-    font-family: "Space Mono", monospace;
-    font-weight: 300;
+#top{
+    font-family: "Seymour One", sans-serif;
     font-style: normal;
-    background-color: white;
+    width: 100%;
 }
-.grid{
+#top img{
+    width: 100%;
+}
+#background-desktop{
+    display: none;
+}
+#top h1{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    font-size: 3em;
+    padding: 1% 0 1% 0;
+}
+
+
+.grid-gallery{
     width: 90%;
     padding: 5% 5%;
     display: grid;
     grid-template-columns: 1fr;
-    
     gap: 1em;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #1a363642
 }
 .item{
     border: 1px solid rgba(0, 0, 0, 1);
     width: 100%;
-    /* height: 300px; */
+}
+
+#about{
+    text-align: center;
+    width: 80%;
+    margin:  8% 10%;
+    font-size: 1.5em;
+}
+#about h2{
+    font-family: "Seymour One", sans-serif;
+    font-style: normal;
+    color: #1A3636
+}
+#about  p{
+    color: #D6BD98;
+}
+
+
+#about #interest p{
+    /* border:solid black 1px; */
+    padding: 0 5%;
+    cursor: pointer;
+}
+#about #interest p:hover{
+    background-color: #2d3b36;
+
+}
+
+footer{
+    /* background-color: white; */
+    font-family: "Space Mono", sans-serif;
+    font-style:italic;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    padding: .1%;
 }
 
 @media (width > 1190px) {
-    .grid{
+    #background-mobile{
+        display: none;
+    }
+    #background-desktop{
+        display: inline-block;
+    }
+
+    #top h1{
+        top: 15%;
+    }
+
+    .grid-gallery{
         grid-template-columns: 1fr 1fr;
     }
     .item{
         height: 300px;
     }
-    header{
-        font-size: 4em;  
-
-    }   
+    #about{
+        font-size: 2em;
+    }
+    #about #interest{
+        display: flex;
+        justify-content:space-between;
+    }
 }
 @media (width > 1800px) {
-    .grid{
+    #top h1{
+        top: 25%;
+        font-size: 5em;
+
+    }   
+    .grid-gallery{
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    #about{
+        font-size: 3em;
     }
     
 }
