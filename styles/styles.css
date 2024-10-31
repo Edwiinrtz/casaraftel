@@ -3,6 +3,30 @@ body{
     width: 100%;
     height: 100%;
     background-color: #40534C;
+    /* overflow: hidden; */
+
+}
+#viewer{
+    position: sticky;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100dvh;
+    z-index: 1;
+    color: white;
+    display: none;
+}
+#viewer img{
+    position: absolute;
+    top: 40%;
+    width: 90%;
+    margin-left: 5%;
+}
+#viewer i{
+    position: absolute;
+    left: 90%;
+    font-size: xx-large;
 }
 
 #top{
@@ -87,6 +111,10 @@ footer{
     }
     #background-desktop{
         display: inline-block;
+    }
+
+    #viewer img{
+        top: 10%;
     }
 
     #top h1{

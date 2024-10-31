@@ -7,9 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Seymour+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/scripts.js"></script>
     <title>casaraftel.com</title>
 </head>
 <body>
+    <section id="viewer" onclick="closeViewer()">
+        <i class="fa fa-close fa-xl" onclick="closeViewer()"></i>
+        <img src="https://lh3.googleusercontent.com/d/15weC58VMVE6KzYkDenYFp5vygNlPBfgv" alt="view image">
+    </section>
     <section id="top">
         <img id="background-desktop" src="/assets/background.jpg" alt="desktop background">
         <img id="background-mobile" src="/assets/background-mobile.jpg" alt="desktop background">
@@ -21,13 +27,13 @@
     
     
     <section class="grid-gallery">
-        <img class="item" src="https://lh3.googleusercontent.com/d/15weC58VMVE6KzYkDenYFp5vygNlPBfgv" alt="ahuyamas">
-        <img class="item" src="https://lh3.googleusercontent.com/d/1w0TjbkBCSeln0nS_t4ixMFrN3vHukMId" alt="1ros frutos de raftel">
-        <img class="item" src="https://lh3.googleusercontent.com/d/19MsgUUfRdqBtoMkTt4ZdexR7DwZIrrNy" alt="item 0">
-        <img class="item" src="https://lh3.googleusercontent.com/d/123_tLCfxgPT3KqI1AGE79VYcPGBB45qe" alt="item 0.5">
-        <img class="item" src="https://lh3.googleusercontent.com/d/10yeZOBuqG-nQtVXhSWIcizjuJFR0JOng" alt="item 1">
-        <img class="item" src="https://lh3.googleusercontent.com/d/10lH8hK_KNUFPFX-coaV2EzqvM9uTY1d9" alt="item 2">
-        <!-- <img class="item" src="https://lh3.googleusercontent.com/d/1cIHwZkWZFE2BlJ9TCsUNGLVPZNkwVcBL" alt="item 2"> -->
+        <img class="item" src="https://lh3.googleusercontent.com/d/15weC58VMVE6KzYkDenYFp5vygNlPBfgv" onclick="openViewer('https://lh3.googleusercontent.com/d/15weC58VMVE6KzYkDenYFp5vygNlPBfgv')" alt="ahuyamas">
+        <img class="item" src="https://lh3.googleusercontent.com/d/1w0TjbkBCSeln0nS_t4ixMFrN3vHukMId" onclick="openViewer('https://lh3.googleusercontent.com/d/1w0TjbkBCSeln0nS_t4ixMFrN3vHukMId')" alt="1ros frutos de raftel">
+        <img class="item" src="https://lh3.googleusercontent.com/d/19MsgUUfRdqBtoMkTt4ZdexR7DwZIrrNy" onclick="openViewer('https://lh3.googleusercontent.com/d/19MsgUUfRdqBtoMkTt4ZdexR7DwZIrrNy')" alt="item 0">
+        <img class="item" src="https://lh3.googleusercontent.com/d/123_tLCfxgPT3KqI1AGE79VYcPGBB45qe" onclick="openViewer('https://lh3.googleusercontent.com/d/123_tLCfxgPT3KqI1AGE79VYcPGBB45qe')" alt="item 0.5">
+        <img class="item" src="https://lh3.googleusercontent.com/d/10yeZOBuqG-nQtVXhSWIcizjuJFR0JOng" onclick="openViewer('https://lh3.googleusercontent.com/d/10yeZOBuqG-nQtVXhSWIcizjuJFR0JOng')" alt="item 1">
+        <img class="item" src="https://lh3.googleusercontent.com/d/10lH8hK_KNUFPFX-coaV2EzqvM9uTY1d9" onclick="openViewer('https://lh3.googleusercontent.com/d/10lH8hK_KNUFPFX-coaV2EzqvM9uTY1d9')" alt="item 2">
+        <!-- <img class="item" src="https://lh3.googleusercontent.com/d/1cIHwZkWZFE2BlJ9TCsUNGLVPZNkwVcBL" onclick="openViewer('https://lh3.googleusercontent.com/d/1cIHwZkWZFE2BlJ9TCsUNGLVPZNkwVcBL')" alt="item 2"> -->
     </section>
 
     <section id="about">
